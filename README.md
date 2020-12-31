@@ -23,3 +23,5 @@ Be careful, if this parameter is defined extended configuration will be used.
 ```
 
 ## configBranch: optional (by default, master)
+
+## migrationConfigPath: optional (by default, migration-config)
