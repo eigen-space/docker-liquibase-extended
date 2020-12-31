@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd"
+>
+    <include file="000--structure.sql" relativeToChangelogFile="true"/>
+    <include file="001--access-data-schema.sql" relativeToChangelogFile="true"/>
+    <include file="002--xero-table.sql" relativeToChangelogFile="true"/>
+    <include file="003--taxonomies-sync.sql" relativeToChangelogFile="true"/>
+    <include file="004--attachment-storage.sql" relativeToChangelogFile="true"/>
+    <include file="005--redesign-taxonomies.sql" relativeToChangelogFile="true"/>
+    <include file="006--attachment-validation-status.sql" relativeToChangelogFile="true"/>
+    <include file="007--drop-xero-project-relation.sql" relativeToChangelogFile="true"/>
+    <include file="008--drop-reflexia.sql" relativeToChangelogFile="true"/>
+    <include file="009--email-validation-default-status.sql" relativeToChangelogFile="true"/>
+    <include file="010--sync-state-data-migration.sql" relativeToChangelogFile="true"/>
+    <include file="011--create-enrichment-source.sql" relativeToChangelogFile="true"/>
+    <include file="012--create-and-integrate-origin.sql" relativeToChangelogFile="true"/>
+    <include file="013--change-quantity-type-to-float.sql" relativeToChangelogFile="true"/>
+    <include file="014--many-to-many-origin.sql" relativeToChangelogFile="true"/>
+    <include file="015--external-id-to-origin.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>

@@ -1,0 +1,1 @@
+alter table finance.document_line alter column quantity type real;
