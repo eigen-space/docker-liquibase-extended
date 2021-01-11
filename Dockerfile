@@ -2,8 +2,8 @@ FROM liquibase/liquibase:4.1
 
 USER root
 RUN apt-get update \
-    && apt-get -y install git \
-    && git --version
+    && apt-get --no-install-recommends -y install git=1:2.20.1-2+deb10u3 \
+    && rm -rf /var/lib/apt/lists/*
 
 USER liquibase
 
