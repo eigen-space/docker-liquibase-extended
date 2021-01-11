@@ -3,7 +3,7 @@ set -e
 
 # Parse script params and define variable after transformations
 assignScriptParamsToVariables() {
-	paramList=$1
+	local paramList=$1
 	for param in $paramList; do
 		case $param in (*=*)
 			# shellcheck disable=SC2001
@@ -14,11 +14,12 @@ assignScriptParamsToVariables() {
 }
 
 clearScriptCustomParams() {
-	sourceList=$1
-	ignoredItems=$2
-	destList=()
+	local sourceList=$1
+	local ignoredItems=$2
+	local destList=()
 
 	for param in  $sourceList; do
+		local key
 		# shellcheck disable=SC2001
 		# shellcheck disable=SC2086
 		key="$(echo $param | sed 's/=.*//')"
